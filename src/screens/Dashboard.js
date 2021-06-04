@@ -6,14 +6,36 @@ import Paragraph from '../components/Paragraph'
 import Button from '../components/Button'
 
 export default function Dashboard({ navigation }) {
+  
+  
+  
   return (
     <Background>
       <Logo />
-      <Header>Let’s start</Header>
-      <Paragraph>
-        Your amazing app starts here. Open you favorite code editor and start
-        editing this project.
-      </Paragraph>
+
+      <Header>Kidz:</Header>
+
+      <Paragraph>--- placeholder for text here ---</Paragraph>
+      <text>--- get all books test below ---</text>
+      <Text>{JSON.stringify(getAllBooks())}</Text>
+      <button
+        mode="outlined"
+        onPress={() =>
+          navigation.navigate({ routes: [{ name: 'DevelopmentDataScreen' }] })
+        }
+      >
+        --- button(s) here for each kid that has been added, showing kids names ---
+      </button>
+
+      <Button
+        mode="outlined"
+        onPress={() =>
+          navigation.navigate({ routes: [{ name: 'AddKidScreen' }] })
+        }
+      >
+        --- Button to add a kid here ---
+      </Button>
+
       <Button
         mode="outlined"
         onPress={() =>
@@ -23,7 +45,7 @@ export default function Dashboard({ navigation }) {
           })
         }
       >
-        Logout
+        Logout (move somewhere else)
       </Button>
     </Background>
   )

@@ -9,9 +9,9 @@ export default function StartScreen({ navigation }) {
   return (
     <Background>
       <Logo />
-      <Header>Login Template</Header>
+      <Header>Dadz Login</Header>
       <Paragraph>
-        The easiest way to start with your amazing application.
+        Login here
       </Paragraph>
       <Button
         mode="contained"

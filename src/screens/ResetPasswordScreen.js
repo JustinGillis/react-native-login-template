@@ -35,7 +35,7 @@ export default function ResetPasswordScreen({ navigation }) {
         autoCompleteType="email"
         textContentType="emailAddress"
         keyboardType="email-address"
-        description="You will receive email with password reset link."
+        description="You will receive email with a password reset link."
       />
       <Button
         mode="contained"
